@@ -1,16 +1,29 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using QuizApp.DL.Domain;
 
 namespace QuizApp.DL.Database
 {
     public partial class QuizAppDbContext : DbContext
     {
         private IConfiguration Configuration;
-        public QuizAppDbContext(IConfiguration _configuration)
-        {
-            Configuration = _configuration;
-        }
 
+
+        public DbSet<Questions> Questions { get; set; }
+        public DbSet<Answers> Answers { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<UserQuestion> UserQuestions { get; set; }
+
+
+        //public QuizAppDbContext(IConfiguration _configuration)
+        //{
+        //    Configuration = _configuration;
+        //}
+        public QuizAppDbContext()
+        {
+
+        }
         public QuizAppDbContext(DbContextOptions<QuizAppDbContext> options) : base(options)
         {
 
