@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizApp.Bll", "QuizApp.Bll\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizApp.DL", "QuizApp.DL\QuizApp.DL.csproj", "{7C264A9F-8720-41F2-8D4A-889AE4CD11E3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLayer", "BusinessLayer", "{74F30C31-4DE6-430B-AB91-E55D4F79AE38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLayer", "DataLayer", "{55358E91-38EF-4372-8D4F-F51295551D62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{F8350434-08CD-462C-8437-B34D7F9FF959}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +36,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4A121F32-01B7-49DB-9056-859083647423} = {F8350434-08CD-462C-8437-B34D7F9FF959}
+		{7893FB28-E5CC-41EC-8B1F-BA9B81F63DBF} = {74F30C31-4DE6-430B-AB91-E55D4F79AE38}
+		{7C264A9F-8720-41F2-8D4A-889AE4CD11E3} = {55358E91-38EF-4372-8D4F-F51295551D62}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {868547C4-DD7B-4630-A0A3-1FF6AAD68AA4}
