@@ -35,7 +35,10 @@ namespace QuizApp.DL.Database
                 optionsBuilder.UseSqlServer(Configuration.GetConnectionString("QuizAppDb"));
             }
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder) { }
+        protected override void OnModelCreating(ModelBuilder modelBuilder) {
+        
+            OnModelCreatingPartial(modelBuilder);
+        }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
