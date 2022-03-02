@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp6.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\QuizApp.DL\QuizApp.DL.csproj" />
+  </ItemGroup>
+
 </Project>

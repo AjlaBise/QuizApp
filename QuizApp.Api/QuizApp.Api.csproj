@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\QuizApp.Bll\QuizApp.Bll.csproj" />
     <ProjectReference Include="..\QuizApp.DL\QuizApp.DL.csproj" />
   </ItemGroup>
 

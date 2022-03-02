@@ -5,7 +5,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using QuizApp.Bll.Implementation;
+using QuizApp.Bll.Interface;
 using QuizApp.DL.Database;
+using QuizApp.DL.Repositories;
+using QuizApp.DL.Repositories.Interface;
 
 namespace QuizApp.Api
 {
@@ -31,6 +35,10 @@ namespace QuizApp.Api
 
             var connectionString = Configuration.GetConnectionString("QuizAppDb");
             services.AddDbContext<QuizAppDbContext>(builder => builder.UseSqlServer(connectionString));
+
+            services.AddScoped<IAnswerService, AnswerService>();
+            services.AddScoped<IAnswerRepository, AnswerRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
