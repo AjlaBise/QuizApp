@@ -22,7 +22,7 @@ namespace QuizApp.Api.Controllers
         {
             try
             {
-                return Ok(_questionService.GetAllQuestions());
+                return Ok(await _questionService.GetAllQuestions());
             }
             catch (Exception e)
             {

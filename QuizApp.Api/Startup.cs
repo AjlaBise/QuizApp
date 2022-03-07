@@ -39,6 +39,9 @@ namespace QuizApp.Api
             services.AddScoped<IAnswerService, AnswerService>();
             services.AddScoped<IAnswerRepository, AnswerRepository>();
 
+            services.AddScoped<IQuestionService, QuestionService>();
+            services.AddScoped<IQuestionRepository, QuestionRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
