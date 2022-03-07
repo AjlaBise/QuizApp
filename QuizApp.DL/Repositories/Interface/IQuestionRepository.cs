@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace QuizApp.Bll.Interface
+namespace QuizApp.DL.Repositories.Interface
 {
-    public interface IQuestionService
+    public interface IQuestionRepository
     {
         Task<List<Questions>> GetAllQuestions();
     }
